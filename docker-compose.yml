@@ -1,0 +1,11 @@
+# Declare compose version
+version: '2'
+
+# Define your services
+services:
+  my-app:
+    build: '.'
+    volumes: 
+      - './DjangoCelery/:/var/www/html/celery/'
+
+
